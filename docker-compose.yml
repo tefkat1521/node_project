@@ -3,7 +3,7 @@ services:
   angular-app:
     build: 
       context: /home/jenkins/angular
-      dockerfile: Dockerfile
+      dockerfile: /home/jenkins/angular/Dockerfile
     ports:
       - "4200:80"
     networks:
@@ -11,7 +11,7 @@ services:
   node-app:
     build: 
       context: /home/jenkins/node
-      dockerfile: /home/jenkins/angular/Dockerfile
+      dockerfile: /home/jenkins/node/Dockerfile
     ports:
       - "3000:3000"
     networks:
