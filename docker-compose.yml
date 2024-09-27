@@ -5,6 +5,6 @@ services:
     ports:
       - "4200:80"
   node-app:
-    build: ./home/jenkins/node
+    build: /home/jenkins/node
     ports:
       - "3000:3000"
