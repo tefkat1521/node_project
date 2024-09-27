@@ -1,7 +1,7 @@
 version: '3'
 services:
   angular-app:
-    build: /usr/src/angular/
+    build: /home/jenkins/angular
     ports:
       - "4200:80"
   node-app:
