@@ -5,8 +5,13 @@ const port = 3000;
 
 app.use(cors());
 
+// Ruta raíz
+app.get('/', (req, res) => {
+    res.send('Node.js server is running!');
+});
+
 app.get('/api/message', (req, res) => {
-    const message = 'Hello from Node.jsssss!';
+    const message = 'Hello from Node.js!';
     console.log(message);
     res.json({ message });
 });
