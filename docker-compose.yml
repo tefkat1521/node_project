@@ -1,16 +1,13 @@
 version: '3'
 services:
   angular-app:
-    build:
-      context: /home/jenkins/angular
+    build: ./angular-project
     ports:
       - "4200:80"
     networks:
       - app-network
-
   node-app:
-    build:
-      context: /home/jenkins/node
+    build: ./node-project
     ports:
       - "3000:3000"
     networks:
