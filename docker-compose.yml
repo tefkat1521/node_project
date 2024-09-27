@@ -3,7 +3,7 @@ services:
   angular-app:
     build: /home/jenkins/angular
     ports:
-      - "4200:4200"
+      - "4200:80"
     networks:
       - app-network
   node-app:

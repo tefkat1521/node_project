@@ -4,14 +4,14 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-
+origin: 'http://localhost:4200'
 // Ruta raíz
 app.get('/', (req, res) => {
-    res.send('Node.js server is running!');
+    res.send('Node.js server is runninggggggggggggggggggg!');
 });
 
 app.get('/api/message', (req, res) => {
-    const message = 'Hello from Node.js!';
+    const message = 'Hello from Node.jssssssssssssssss!';
     console.log(message);
     res.json({ message });
 });
