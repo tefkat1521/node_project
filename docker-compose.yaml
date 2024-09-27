@@ -1,0 +1,10 @@
+version: '3'
+services:
+  angular-app:
+    build: ./angular-project
+    ports:
+      - "4200:80"
+  node-app:
+    build: ./node-project
+    ports:
+      - "3000:3000"
