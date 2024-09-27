@@ -1,18 +1,23 @@
 version: '3'
-services:
-  angular-app:
-    build: /home/jenkins/angular
-    ports:
-      - "4200:4200"
-    networks:
-      - app-network
-  node-app:
-    build: /home/jenkins/node
-    ports:
-      - "3000:3000"
-    networks:
-      - app-network
+   services:
+     angular-app:
+       build: 
+         context: /home/jenkins/angular
+         dockerfile: Dockerfile
+       ports:
+         - "4200:80"
+       networks:
+         - app-network
+     node-app:
+       build: 
+         context: /home/jenkins/node
+         dockerfile: Dockerfile
+       ports:
+         - "3000:3000"
+       networks:
+         - app-network
 
-networks:
-  app-network:
-    driver: bridge
+   networks:
+     app-network:
+       driver: bridge
+   
