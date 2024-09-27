@@ -1,7 +1,7 @@
 version: '3'
 services:
   angular-app:
-    build: ./angular-project
+    build: /usr/src/angular/
     ports:
       - "4200:80"
   node-app:
